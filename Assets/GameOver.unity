@@ -274,7 +274,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 35227867}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 184, y: 103.5, z: 0}
+  m_LocalPosition: {x: 223.5, y: 125.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 843453352}
@@ -411,8 +411,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "CONGRATULATIONS! \nYOU'VE Saved 12 of \nYOUR TEARS\n\t\t<<from the eyes\n\tof
-    others.>> "
+  m_Text: "12 TEARS \nHAVE \nBEEN \nSAVED. "
 --- !u!222 &843453354
 CanvasRenderer:
   m_ObjectHideFlags: 0

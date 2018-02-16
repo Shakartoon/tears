@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 
 public class PlayerController : MonoBehaviour {
-
-	public float moveSpeed = 0.1f; 
+	public float moveSpeed = 0.01f; 
 
 	public KeyCode rightKey = KeyCode.RightArrow; 
 	public KeyCode leftKey = KeyCode.LeftArrow; 

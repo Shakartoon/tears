@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManagerScript : MonoBehaviour {
 
@@ -8,6 +10,8 @@ public class GameManagerScript : MonoBehaviour {
 	public Transform[] spawnPoints; 
 	public float spawnFrequency; 
 	private float timeSinceLastSpawn; 
+
+	public float timeLeft = 1.0f; 
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +24,14 @@ public class GameManagerScript : MonoBehaviour {
 	void Update () {
 
 		TearSpawning (); 
+
+		timeLeft -= Time.deltaTime;
+		if ( timeLeft <= 0.0f )
+		{
+			SceneManager.LoadScene ("GameOver"); 
+			Debug.Log ("bullshit."); 
+		}
+
 		
 		
 	}
@@ -29,7 +41,7 @@ public class GameManagerScript : MonoBehaviour {
 		timeSinceLastSpawn += Time.deltaTime; 
 
 		if (timeSinceLastSpawn >= spawnFrequency) {
-		
+
 			SpawnTear (); 
 			timeSinceLastSpawn = 0; 
 
